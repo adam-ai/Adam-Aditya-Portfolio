@@ -8,9 +8,10 @@ export const siteConfig = {
   links: {
     instagram: "https://www.instagram.com/arrosyid_adam/",
     github: "https://github.com/adam-ai",
+    templateRepo: "https://github.com/adam-ai/Adam-Aditya-Portfolio",
   },
   ogImage:
-    "/public/Confident-Coworking-Portrait.png",
+    "/Confident-Coworking-Portrait.png",
   iconIco:
     "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357384/assets/naman-favicon.ico",
   logoIcon:
