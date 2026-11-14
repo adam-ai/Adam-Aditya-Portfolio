@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
+  instagram: {
     card: "summary_large_image",
     title: `${pagesConfig.blogs.metadata.title} | ${siteConfig.name}`,
     description: pagesConfig.blogs.metadata.description,
