@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "Naman Barkiya - Applied AI Engineer",
-  authorName: "Naman Barkiya",
-  username: "namanbarkiya",
+  name: "Adam Ar Rosyid Aditya - Technical Business Analyst",
+  authorName: "Adam Ar Rosyid Aditya",
+  username: "AdamAditya",
   description:
-    "Naman Barkiya - Applied AI Engineer working at the intersection of AI, data, and scalable software systems. Explore my projects, experience, and contributions in software development and AI.",
+    "Adam Ar Rosyid Aditya - Technical Business Analyst bridging the gap between enterprise software architecture, data-driven strategy, and AI product innovation. Explore my portfolio of system workflows, product requirements, and AI implementation initiatives.",
   url: "https://nbarkiya.xyz",
   links: {
     twitter: "https://x.com/namanbarkiya",
