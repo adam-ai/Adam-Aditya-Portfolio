@@ -26,7 +26,7 @@ import profileImg from "@/public/profile-img.jpg";
 export const metadata: Metadata = {
   title: `${pagesConfig.home.metadata.title}`,
   description:
-    "Naman Barkiya - Applied AI Engineer working at the intersection of AI, data, and scalable software systems. Explore my projects, experience, and contributions.",
+    "Adam Ar Rosyid Aditya - Technical Business Analyst bridging the gap between enterprise software architecture, data-driven strategy, and AI product innovation. Explore my portfolio of system workflows, product requirements, and AI implementation initiatives.",
   alternates: {
     canonical: siteConfig.url,
   },
@@ -41,8 +41,8 @@ export default function IndexPage() {
     name: siteConfig.authorName,
     url: siteConfig.url,
     image: siteConfig.ogImage,
-    jobTitle: "Applied AI Engineer",
-    sameAs: [siteConfig.links.github, siteConfig.links.twitter],
+    jobTitle: "Business Analyst",
+    sameAs: [siteConfig.links.github, siteConfig.links.instagram],
   };
 
   // Structured data for website as a software application (template)
@@ -93,14 +93,14 @@ export default function IndexPage() {
             delay={0.2}
             className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            Naman Barkiya
+            Adam Ar Rosyid Aditya
           </AnimatedText>
           <AnimatedText
             as="h3"
             delay={0.4}
             className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
           >
-            Applied AI Engineer
+            Business Analyst
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
