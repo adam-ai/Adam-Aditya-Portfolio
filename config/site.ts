@@ -6,9 +6,8 @@ export const siteConfig = {
     "Adam Ar Rosyid Aditya - Technical Business Analyst bridging the gap between enterprise software architecture, data-driven strategy, and AI product innovation. Explore my portfolio of system workflows, product requirements, and AI implementation initiatives.",
   url: "https://adam-aditya-portfolio-4x6m.vercel.app/",
   links: {
-    twitter: "https://x.com/namanbarkiya",
-    github: "https://github.com/namanbarkiya",
-    templateRepo: "https://github.com/namanbarkiya/minimal-next-portfolio",
+    instagram: "https://www.instagram.com/arrosyid_adam/",
+    github: "https://github.com/adam-ai",
   },
   ogImage:
     "/public/Confident-Coworking-Portrait.png",
@@ -17,12 +16,12 @@ export const siteConfig = {
   logoIcon:
     "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357294/assets/naman-logo.png",
   keywords: [
-    "Naman Barkiya",
-    "Applied AI Engineer",
-    "AI Engineer",
-    "Software Engineer",
-    "Full Stack Developer",
-    "Machine Learning",
+    "Adam Ar Rosyid Aditya",
+    "Business Analyst",
+    "AI Enthusiast",
+    "AI Product Development",
+    "AI Agents",
+    "Software Development Lifecycle (SDLC)",
     "Data Engineering",
     "UBS",
     "Python Developer",
