@@ -59,7 +59,7 @@ export async function generateMetadata({
           },
         ],
       },
-      twitter: {
+      Instagram: {
         card: "summary_large_image",
         title: post.title,
         description: post.description,
@@ -111,7 +111,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       "@type": "Person",
       name: siteConfig.authorName,
       url: siteConfig.url,
-      sameAs: [siteConfig.links.github, siteConfig.links.twitter],
+      sameAs: [siteConfig.links.github, siteConfig.links.instagram],
     },
     publisher: {
       "@type": "Person",
@@ -308,7 +308,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <div className="text-sm text-muted-foreground">
               Written by{" "}
               <Link
-                href={siteConfig.links.twitter}
+                href={siteConfig.links.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium text-foreground hover:text-primary transition-colors"
