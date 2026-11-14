@@ -85,7 +85,7 @@ export default function IndexPage() {
             width={100}
             sizes="100vw"
             className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt="Naman Barkiya - Applied AI Engineer Portfolio"
+            alt="Adam Ar Rosyid Aditya - Business Analyst Portfolio"
             priority
           />
           <AnimatedText
@@ -130,7 +130,7 @@ export default function IndexPage() {
                     size: "lg",
                   })
                 )}
-                aria-label="Contact Naman Barkiya"
+                aria-label="Contact Adam Ar Rosyid Aditya"
               >
                 <Icons.contact className="w-4 h-4 mr-2" /> Contact
               </Link>
