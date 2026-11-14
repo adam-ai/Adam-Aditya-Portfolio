@@ -4,7 +4,7 @@ export const siteConfig = {
   username: "AdamAditya",
   description:
     "Adam Ar Rosyid Aditya - Technical Business Analyst bridging the gap between enterprise software architecture, data-driven strategy, and AI product innovation. Explore my portfolio of system workflows, product requirements, and AI implementation initiatives.",
-  url: "https://nbarkiya.xyz",
+  url: "https://adam-aditya-portfolio-4x6m.vercel.app/",
   links: {
     twitter: "https://x.com/namanbarkiya",
     github: "https://github.com/namanbarkiya",
