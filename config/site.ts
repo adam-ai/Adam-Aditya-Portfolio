@@ -11,7 +11,7 @@ export const siteConfig = {
     templateRepo: "https://github.com/adam-ai/Adam-Aditya-Portfolio",
   },
   ogImage:
-    "/Confident-Coworking-Portrait.png",
+    "/profile-img2.jpg",
   iconIco:
     "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357384/assets/naman-favicon.ico",
   logoIcon:
