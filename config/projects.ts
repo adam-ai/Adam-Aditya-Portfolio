@@ -11,6 +11,18 @@ interface DescriptionDetailsInterface {
   bullets: string[];
 }
 
+export interface ProjectModuleInterface {
+  id: string;
+  name: string;
+  subtitle: string;
+  status: "Shipped" | "In Development";
+  shortDescription: string;
+  websiteLink?: string;
+  techStack: ValidSkills[];
+  descriptionDetails: DescriptionDetailsInterface;
+  pagesInfoArr: PagesInfoInterface[];
+}
+
 export interface ProjectInterface {
   id: string;
   type: ValidExpType;
@@ -25,47 +37,186 @@ export interface ProjectInterface {
   companyLogoImg: any;
   descriptionDetails: DescriptionDetailsInterface;
   pagesInfoArr: PagesInfoInterface[];
+  modules?: ProjectModuleInterface[];
 }
 
 export const Projects: ProjectInterface[] = [
   // 1. Cerebro Suite
-  {
-    id: "cerebro-suite",
-    type: "Professional",
-    companyName: "PT Neo Fusion Indonesia",
-    category: ["Product Management", "AI Product", "Business Analysis"],
-    shortDescription:
-      "An AI-powered SDLC intelligence platform designed to streamline software development workflows.",
-    techStack: [
-      "Generative AI",
-      "Large Language Models (LLM)",
-      "Prompt Engineering",
-      "AI Product Development",
-      "SDLC",
-      "Requirement Analysis",
-      "User Stories",
-      "BPMN",
-      "Draw.io",
-      "Figma",
+{
+  id: "cerebro-suite",
+  type: "Professional",
+  companyName: "PT Neo Fusion Indonesia",
+  category: ["Product Management", "AI Product", "Business Analysis"],
+  shortDescription:
+    "An AI-powered SDLC intelligence platform designed to streamline software development workflows.",
+  techStack: [
+    "Generative AI",
+    "Large Language Models (LLM)",
+    "Prompt Engineering",
+    "AI Product Development",
+    "SDLC",
+    "Requirement Analysis",
+    "User Stories",
+    "BPMN",
+    "Draw.io",
+    "Figma",
+  ],
+  startDate: new Date("2025-09-01"),
+  endDate: new Date(),
+  companyLogoImg: "",
+  descriptionDetails: {
+    paragraphs: [
+      "Cerebro Suite is an internal B2B product initiative at PT Neo Fusion Indonesia, bringing AI capabilities into different stages of the Software Development Lifecycle (SDLC).",
+      "As Product Manager, I oversee product planning, roadmap development, requirement definition, and feature prioritization across its modules, working closely with the development team to turn product objectives into actionable solutions.",
     ],
-    startDate: new Date("2025-09-01"),
-    endDate: new Date(),
-    companyLogoImg: "",
-    descriptionDetails: {
-      paragraphs: [
-        "Cerebro Suite is an internal B2B product initiative at PT Neo Fusion Indonesia, bringing AI capabilities into different stages of the Software Development Lifecycle (SDLC).",
-        "As Product Manager, I drive product planning and requirements across its modules, working closely with the development team to translate product objectives into actionable features.",
-      ],
-      bullets: [
-        "Define product roadmap, MVP scope, feature priorities, and backlog.",
-        "Gather requirements and translate them into FSD, user stories, and acceptance criteria.",
-        "Create BPMN, user flows, use case diagrams, and wireframes.",
-        "Coordinate with developers throughout product planning and development.",
-        "Contribute to feature definition across Prism, Vision, Lens, Sentinel, Envoy, Pulse, and Forge.",
-      ],
-    },
-    pagesInfoArr: [],
+    bullets: [
+      "Define product roadmap, MVP scope, feature priorities, and product backlog.",
+      "Gather requirements and translate them into functional specifications, user stories, and acceptance criteria.",
+      "Create BPMN diagrams, user flows, use case diagrams, and wireframes.",
+      "Coordinate with developers throughout product planning and development.",
+      "Drive product direction and feature definition across five integrated modules.",
+    ],
   },
+  pagesInfoArr: [],
+  modules: [
+    {
+      id: "prism",
+      name: "Prism",
+      subtitle: "Documentation Intelligence",
+      status: "Shipped",
+      shortDescription:
+        "AI-powered documentation generation and management, transforming requirements and meeting notes into structured software documentation.",
+      techStack: [
+        "Generative AI",
+        "Large Language Models (LLM)",
+        "Prompt Engineering",
+        "AI Product Development",
+        "SDLC",
+        "Requirement Analysis",
+      ],
+      descriptionDetails: {
+        paragraphs: [
+          "Prism is the documentation intelligence module within Cerebro Suite, designed to streamline the creation and management of software documentation.",
+        ],
+        bullets: [
+          "Define product requirements and feature scope.",
+          "Plan AI-powered documentation generation workflows.",
+          "Translate product needs into functional specifications.",
+          "Coordinate with developers on feature implementation.",
+        ],
+      },
+      pagesInfoArr: [],
+    },
+    {
+      id: "vision",
+      name: "Vision",
+      subtitle: "UI Prototyping",
+      status: "In Development",
+      shortDescription:
+        "AI-assisted UI prototyping that helps transform product requirements into editable interface mockups and screen flows.",
+      techStack: [
+        "Generative AI",
+        "Large Language Models (LLM)",
+        "Prompt Engineering",
+        "Figma",
+        "AI Product Development",
+      ],
+      descriptionDetails: {
+        paragraphs: [
+          "Vision focuses on accelerating the UI design and prototyping process through AI-assisted interface generation.",
+        ],
+        bullets: [
+          "Define UI prototyping features and product requirements.",
+          "Plan screen flow and editable mockup capabilities.",
+          "Define tagging requirements to support automated testing workflows.",
+          "Coordinate with developers on feature development.",
+        ],
+      },
+      pagesInfoArr: [],
+    },
+    {
+      id: "lens",
+      name: "Lens",
+      subtitle: "Source Code Intelligence",
+      status: "In Development",
+      shortDescription:
+        "Codebase intelligence that provides architecture insights, dependency analysis, and impact assessment.",
+      techStack: [
+        "Generative AI",
+        "Large Language Models (LLM)",
+        "AI Product Development",
+        "SDLC",
+        "System Analysis",
+      ],
+      descriptionDetails: {
+        paragraphs: [
+          "Lens provides codebase intelligence to help understand software architecture, dependencies, and potential impacts of code changes.",
+        ],
+        bullets: [
+          "Define source code intelligence requirements.",
+          "Plan codebase graph analysis and impact assessment capabilities.",
+          "Define selector extraction and architecture insight features.",
+          "Coordinate with developers on product implementation.",
+        ],
+      },
+      pagesInfoArr: [],
+    },
+    {
+      id: "sentinel",
+      name: "Sentinel",
+      subtitle: "Test Automation",
+      status: "Prototype",
+      shortDescription:
+        "AI-driven test automation designed to generate and execute Playwright tests using real DOM selectors.",
+      techStack: [
+        "Generative AI",
+        "Large Language Models (LLM)",
+        "Prompt Engineering",
+        "AI Product Development",
+        "SDLC",
+      ],
+      descriptionDetails: {
+        paragraphs: [
+          "Sentinel focuses on AI-driven software testing, connecting test generation and execution with application interface intelligence.",
+        ],
+        bullets: [
+          "Define AI-driven test automation requirements.",
+          "Plan Playwright test generation and execution features.",
+          "Align testing workflows with selector information from Lens.",
+          "Coordinate with developers during prototype development.",
+        ],
+      },
+      pagesInfoArr: [],
+    },
+    {
+      id: "forge",
+      name: "Forge",
+      subtitle: "Spec-driven Development",
+      status: "To Be Confirmed",
+      shortDescription:
+        "A spec-driven development module featuring an AI coding agent for web application development.",
+      techStack: [
+        "Generative AI",
+        "Large Language Models (LLM)",
+        "Prompt Engineering",
+        "AI Product Development",
+        "SDLC",
+      ],
+      descriptionDetails: {
+        paragraphs: [
+          "Forge is designed to support spec-driven software development through an AI coding agent for web applications.",
+        ],
+        bullets: [
+          "Define product requirements and feature scope.",
+          "Plan spec-driven development workflows.",
+          "Translate product objectives into actionable development requirements.",
+          "Coordinate with developers on product direction and implementation.",
+        ],
+      },
+      pagesInfoArr: [],
+    },
+  ],
+},
 
   // 2. Transport Management System - NAFIEN
   {
@@ -104,7 +255,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "adm-e-bidding",
     type: "Professional",
-    companyName: "Astra Daihatsu Motor (ADM)",
+    companyName: "PT Neo Fusion Indonesia",
     category: ["Business Analysis"],
     shortDescription:
       "An E-Bidding application developed to support business bidding processes at Astra Daihatsu Motor.",
@@ -137,7 +288,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "fifgroup-marketing-applications",
     type: "Professional",
-    companyName: "FIFGROUP",
+    companyName: "PT Neo Fusion Indonesia",
     category: ["Business Analysis", "Digital Transformation"],
     shortDescription:
       "Internal marketing applications supporting business operations, including Dealer, Kiosk, and related systems.",
@@ -172,7 +323,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "fifgroup-national-attendance",
     type: "Professional",
-    companyName: "FIFGROUP",
+    companyName: "PT Neo Fusion Indonesia",
     category: ["Business Analysis", "Digital Transformation"],
     shortDescription:
       "A national attendance application supporting employee attendance management across FIFGROUP.",
@@ -206,7 +357,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "korlantas-bodycam",
     type: "Professional",
-    companyName: "Korlantas POLRI",
+    companyName: "PT Gamma Maya Cyberindo",
     category: ["Business Analysis", "Digital Transformation"],
     shortDescription:
       "A bodycam hardware and software solution supporting operational activities at Korlantas POLRI.",
