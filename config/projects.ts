@@ -111,7 +111,7 @@ export const Projects: ProjectInterface[] = [
       id: "vision",
       name: "Vision",
       subtitle: "UI Prototyping",
-      status: "In Development",
+      status: "Shipped",
       shortDescription:
         "AI-assisted UI prototyping that helps transform product requirements into editable interface mockups and screen flows.",
       techStack: [
@@ -138,7 +138,7 @@ export const Projects: ProjectInterface[] = [
       id: "lens",
       name: "Lens",
       subtitle: "Source Code Intelligence",
-      status: "In Development",
+      status: "Shipped",
       shortDescription:
         "Codebase intelligence that provides architecture insights, dependency analysis, and impact assessment.",
       techStack: [
@@ -164,8 +164,8 @@ export const Projects: ProjectInterface[] = [
     {
       id: "sentinel",
       name: "Sentinel",
-      subtitle: "Test Automation",
-      status: "Prototype",
+      subtitle: "Test Scenario & Automation",
+      status: "In Development",
       shortDescription:
         "AI-driven test automation designed to generate and execute Playwright tests using real DOM selectors.",
       techStack: [
@@ -192,7 +192,7 @@ export const Projects: ProjectInterface[] = [
       id: "forge",
       name: "Forge",
       subtitle: "Spec-driven Development",
-      status: "To Be Confirmed",
+      status: "Shipped",
       shortDescription:
         "A spec-driven development module featuring an AI coding agent for web application development.",
       techStack: [
