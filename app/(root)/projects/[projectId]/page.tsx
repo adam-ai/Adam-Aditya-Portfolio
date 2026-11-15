@@ -50,14 +50,14 @@ export default async function Project({ params }: ProjectPageProps) {
           <div className="flex items-center">
             {project.githubLink && (
               <CustomTooltip text="Link to the source code.">
-                <Link href={project.githubLink} target="_blank">
+                <Link href={project.githubLink} target="_blank" rel="noopener noreferrer">
                   <Icons.gitHub className="w-6 ml-4 text-muted-foreground hover:text-foreground" />
                 </Link>
               </CustomTooltip>
             )}
             {project.websiteLink && (
               <CustomTooltip text="Please note that some project links may be temporarily unavailable.">
-                <Link href={project.websiteLink} target="_blank">
+                <Link href={project.websiteLink} target="_blank" rel="noopener noreferrer">
                   <Icons.externalLink className="w-6 ml-4 text-muted-foreground hover:text-foreground " />
                 </Link>
               </CustomTooltip>
@@ -110,7 +110,7 @@ export default async function Project({ params }: ProjectPageProps) {
         <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
           Description
         </h2>
-        {/* {<project.descriptionComponent />} */}
+        
         <ProjectDescription
           paragraphs={project.descriptionDetails.paragraphs}
           bullets={project.descriptionDetails.bullets}
@@ -121,37 +121,37 @@ export default async function Project({ params }: ProjectPageProps) {
         <ProjectModules modules={project.modules} />
       )}
 
-{project.pagesInfoArr.length > 0 && (
-  <div className="mb-7">
-    <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
-      Page Info
-    </h2>
+      {project.pagesInfoArr.length > 0 && (
+        <div className="mb-7">
+          <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
+            Page Info
+          </h2>
 
-    {project.pagesInfoArr.map((page, ind) => (
-      <div key={ind}>
-        <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">
-          <Icons.star className="h-5 w-5 mr-2" />
-          {page.title}
-        </h3>
+          {project.pagesInfoArr.map((page, ind) => (
+            <div key={ind}>
+              <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">
+                <Icons.star className="h-5 w-5 mr-2" />
+                {page.title}
+              </h3>
 
-        <div>
-          <p>{page.description}</p>
+              <div>
+                <p>{page.description}</p>
 
-          {page.imgArr.map((img, imgInd) => (
-            <Image
-              src={img}
-              key={imgInd}
-              alt={page.title}
-              width={720}
-              height={405}
-              className="my-4 rounded-md border bg-muted transition-colors"
-            />
+                {page.imgArr.map((img, imgInd) => (
+                  <Image
+                    src={img}
+                    key={imgInd}
+                    alt={page.title}
+                    width={720}
+                    height={405}
+                    className="my-4 rounded-md border bg-muted transition-colors"
+                  />
+                ))}
+              </div>
+            </div>
           ))}
         </div>
-      </div>
-    ))}
-  </div>
-)}
+      )}
 
       <hr className="mt-12" />
       <div className="flex justify-center py-6 lg:py-10">
