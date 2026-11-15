@@ -13,11 +13,17 @@ import { siteConfig } from "@/config/site";
 import { getAllBlogSlugs, getBlogPost } from "@/lib/blogs";
 import { cn } from "@/lib/utils";
 
+// Temporarily disable the Blogs feature.
+// Set to true when the blog feature is ready to be published.
+const BLOGS_ENABLED = false;
+
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
+  if (!BLOGS_ENABLED) return [];
+  
   const slugs = getAllBlogSlugs();
   return slugs.map((slug) => ({ slug }));
 }
@@ -25,6 +31,16 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: BlogPostPageProps): Promise<Metadata> {
+  if (!BLOGS_ENABLED) {
+    return {
+      title: "Not Found",
+      robots: {
+        index: false,
+        follow: false,
+      },
+    };
+  }
+
   const { slug } = await params;
   try {
     const post = await getBlogPost(slug);
@@ -79,6 +95,10 @@ export async function generateMetadata({
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  if (!BLOGS_ENABLED) {
+    notFound();
+  }
+  
   const { slug } = await params;
 
   let post;
