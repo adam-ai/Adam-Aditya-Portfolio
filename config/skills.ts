@@ -1,10 +1,8 @@
-
 import { Icons } from "@/components/common/icons";
 
 export interface skillsInterface {
   name: string;
   description: string;
-  rating: number;
   icon: any;
 }
 
@@ -13,132 +11,131 @@ export const skillsUnsorted: skillsInterface[] = [
   {
     name: "Requirements Analysis",
     description:
-      "Analyze business needs, identify requirements, and translate them into clear functional and technical specifications.",
-    rating: 5,
-    icon: Icons.graphql,
+      "Analyze business needs, gather stakeholder requirements, and translate them into clear functional specifications for development teams.",
+    icon: Icons.requirements,
   },
   {
     name: "Business Process Modeling",
     description:
-      "Analyze and document business workflows to identify process gaps, inefficiencies, and improvement opportunities.",
-    rating: 4,
-    icon: Icons.angular,
+      "Document business workflows using process diagrams and BPMN to identify inefficiencies and improvement opportunities.",
+    icon: Icons.businessProcess,
   },
   {
     name: "User Stories & Use Cases",
     description:
-      "Define user needs, business scenarios, and acceptance criteria to guide software development.",
-    rating: 5,
-    icon: Icons.react,
-  },
-  {
-    name: "Gap Analysis",
-    description:
-      "Evaluate existing business processes and systems against desired outcomes to identify improvement areas.",
-    rating: 4,
-    icon: Icons.nestjs,
+      "Define user needs, business scenarios, and acceptance criteria to guide product development.",
+    icon: Icons.userStories,
   },
   {
     name: "Functional Specification",
     description:
-      "Translate business requirements into structured functional specifications for development teams.",
-    rating: 4,
-    icon: Icons.typescript,
+      "Prepare Functional Specification Documents (FSD) and translate business requirements into actionable development guidelines.",
+    icon: Icons.analysis,
+  },
+  {
+    name: "Gap Analysis",
+    description:
+      "Evaluate existing business processes and systems against expected outcomes to identify gaps and improvement opportunities.",
+    icon: Icons.gapAnalysis,
   },
 
   // Software Development & SDLC
   {
     name: "Software Development Life Cycle",
     description:
-      "Understand software development phases, from requirement gathering and design to development, testing, and deployment.",
-    rating: 5,
-    icon: Icons.nodejs,
+      "Understand the end-to-end software development lifecycle, from requirement gathering and system design to development, testing, and deployment.",
+    icon: Icons.sdlc,
   },
   {
-    name: "Agile & Scrum",
+    name: "Agile & Waterfall Methodologies",
     description:
-      "Understand Agile methodologies, Scrum frameworks, sprint planning, backlog management, and iterative delivery.",
-    rating: 4,
-    icon: Icons.react,
+      "Understand and work with Agile and Waterfall approaches, including project planning, prioritization, and iterative delivery.",
+    icon: Icons.agile,
   },
   {
-    name: "System Analysis",
+    name: "System Analysis & Integration",
     description:
-      "Analyze system requirements, application architecture, integrations, and technical dependencies.",
-    rating: 4,
-    icon: Icons.express,
+      "Analyze application workflows, system requirements, technical dependencies, and integration needs to bridge business and engineering teams.",
+    icon: Icons.systemAnalysis,
   },
   {
-    name: "API & System Integration",
+    name: "Software Testing Fundamentals",
     description:
-      "Understand REST APIs, data exchange, and system integration concepts to bridge business and technical requirements.",
-    rating: 4,
-    icon: Icons.graphql,
+      "Understand testing processes, test scenarios, test cases, and quality assurance practices throughout software development.",
+    icon: Icons.analysis,
   },
 
   // AI Product Knowledge
   {
     name: "Generative AI",
     description:
-      "Understand generative AI capabilities and their applications in solving business problems and improving productivity.",
-    rating: 5,
-    icon: Icons.javascript,
+      "Understand generative AI capabilities and explore practical applications to solve business problems and improve productivity.",
+    icon: Icons.generativeAI,
   },
   {
     name: "Large Language Models (LLM)",
     description:
-      "Understand LLM capabilities, limitations, use cases, and their integration into AI-powered products.",
-    rating: 4,
-    icon: Icons.typescript,
+      "Understand LLM capabilities, limitations, use cases, and their application in AI-powered products.",
+    icon: Icons.llm,
   },
   {
     name: "Retrieval-Augmented Generation (RAG)",
     description:
-      "Understand RAG architecture and how external knowledge sources improve the accuracy and relevance of AI responses.",
-    rating: 4,
-    icon: Icons.mongodb,
+      "Understand RAG concepts and how external knowledge sources can improve the relevance and accuracy of AI-generated responses.",
+    icon: Icons.rag,
   },
   {
     name: "Prompt Engineering",
     description:
-      "Design and optimize prompts to improve AI output quality, consistency, and task-specific performance.",
-    rating: 5,
-    icon: Icons.nextjs,
+      "Design and refine prompts to improve AI output quality, consistency, and relevance for specific business use cases.",
+    icon: Icons.promptEngineering,
   },
   {
     name: "AI Product Knowledge",
     description:
-      "Evaluate AI product capabilities, business use cases, user needs, and opportunities for AI-driven solutions.",
-    rating: 4,
-    icon: Icons.nodejs,
+      "Evaluate AI product capabilities, user needs, business use cases, and opportunities to develop AI-driven solutions.",
+    icon: Icons.aiProduct,
   },
-  
-  // Technical & Data Fundamentals
+
+  // Tools & Platforms
   {
-    name: "SQL & Database Fundamentals",
+    name: "UI/UX Design & Prototyping Tools",
     description:
-      "Understand relational database concepts and SQL queries for data retrieval, analysis, and validation.",
-    rating: 3,
-    icon: Icons.mysql,
+      "Use Figma, UXPilot, and Balsamiq to create wireframes, interface mockups, and prototypes for communicating product requirements.",
+    icon: Icons.analysis,
   },
   {
-    name: "JavaScript & TypeScript",
+    name: "Business Process & Diagramming Tools",
     description:
-      "Understand programming fundamentals and application logic to communicate effectively with software development teams.",
-    rating: 4,
-    icon: Icons.typescript,
+      "Use Draw.io to visualize business processes, system workflows, use cases, and application interactions.",
+    icon: Icons.businessProcess,
   },
   {
-    name: "Frontend & Backend Fundamentals",
+    name: "Database & SQL Tools",
     description:
-      "Understand frontend, backend, database, and application architecture concepts within modern software systems.",
-    rating: 4,
-    icon: Icons.react,
+      "Use SQL, DBeaver, and Navicat to explore relational databases, retrieve information, and support data validation.",
+    icon: Icons.database,
+  },
+  {
+    name: "Project Management & Collaboration Tools",
+    description:
+      "Use Slack, OpenProject, and Microsoft Teams to coordinate tasks, communicate with stakeholders, and collaborate with development teams.",
+    icon: Icons.userStories,
+  },
+  {
+    name: "AI Platforms & Exploration Tools",
+    description:
+      "Explore AI platforms such as Google AI Studio and Cherry Studio to experiment with AI capabilities, models, and product use cases.",
+    icon: Icons.generativeAI,
+  },
+  {
+    name: "Productivity & Workspace Tools",
+    description:
+      "Use Google Workspace and Microsoft Office for documentation, reporting, data organization, and daily business collaboration.",
+    icon: Icons.analysis,
   },
 ];
 
 export const skills = skillsUnsorted
-  .slice()
-  .sort((a, b) => b.rating - a.rating);
 
 export const featuredSkills = skills.slice(0, 6);
