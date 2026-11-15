@@ -45,7 +45,7 @@ export const Projects: ProjectInterface[] = [
 {
   id: "cerebro-suite",
   type: "Professional",
-  companyName: "PT Neo Fusion Indonesia",
+  companyName: "Cerebro Suite",
   category: ["Product Management", "AI Product", "Business Analysis"],
   shortDescription:
     "An AI-powered SDLC intelligence platform designed to streamline software development workflows.",
@@ -81,7 +81,7 @@ export const Projects: ProjectInterface[] = [
   modules: [
     {
       id: "prism",
-      name: "Prism",
+      name: "Cerebro Prism",
       subtitle: "Documentation Intelligence",
       status: "Shipped",
       shortDescription:
@@ -109,7 +109,7 @@ export const Projects: ProjectInterface[] = [
     },
     {
       id: "vision",
-      name: "Vision",
+      name: "Cerebro Vision",
       subtitle: "UI Prototyping",
       status: "Shipped",
       shortDescription:
@@ -136,7 +136,7 @@ export const Projects: ProjectInterface[] = [
     },
     {
       id: "lens",
-      name: "Lens",
+      name: "Cerebro Lens",
       subtitle: "Source Code Intelligence",
       status: "Shipped",
       shortDescription:
@@ -163,7 +163,7 @@ export const Projects: ProjectInterface[] = [
     },
     {
       id: "sentinel",
-      name: "Sentinel",
+      name: "Cerebro Sentinel",
       subtitle: "Test Scenario & Automation",
       status: "In Development",
       shortDescription:
@@ -190,7 +190,7 @@ export const Projects: ProjectInterface[] = [
     },
     {
       id: "forge",
-      name: "Forge",
+      name: "Cerebro Forge",
       subtitle: "Spec-driven Development",
       status: "Shipped",
       shortDescription:
@@ -222,7 +222,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "nafien-transport-management",
     type: "Professional",
-    companyName: "PT Neo Fusion Indonesia",
+    companyName: "NAFIEN - TMS",
     category: ["Business Analysis"],
     shortDescription:
       "A Transport Management System designed to support transportation and logistics operations.",
@@ -255,7 +255,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "adm-e-bidding",
     type: "Professional",
-    companyName: "PT Neo Fusion Indonesia",
+    companyName: "E-Bidding",
     category: ["Business Analysis"],
     shortDescription:
       "An E-Bidding application developed to support business bidding processes at Astra Daihatsu Motor.",
@@ -288,7 +288,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "fifgroup-marketing-applications",
     type: "Professional",
-    companyName: "PT Neo Fusion Indonesia",
+    companyName: "FIF Mobile Connect",
     category: ["Business Analysis", "Digital Transformation"],
     shortDescription:
       "Internal marketing applications supporting business operations, including Dealer, Kiosk, and related systems.",
@@ -323,7 +323,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "fifgroup-national-attendance",
     type: "Professional",
-    companyName: "PT Neo Fusion Indonesia",
+    companyName: "FIF Mobile Attendance",
     category: ["Business Analysis", "Digital Transformation"],
     shortDescription:
       "A national attendance application supporting employee attendance management across FIFGROUP.",
@@ -357,7 +357,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "korlantas-bodycam",
     type: "Professional",
-    companyName: "PT Gamma Maya Cyberindo",
+    companyName: "Bodycam",
     category: ["Business Analysis", "Digital Transformation"],
     shortDescription:
       "A bodycam hardware and software solution supporting operational activities at Korlantas POLRI.",
@@ -389,7 +389,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "bkpsdm-e-kinerja",
     type: "Professional",
-    companyName: "BKPSDM Mojokerto",
+    companyName: "E-Kinerja",
     category: ["Digital Transformation"],
     shortDescription:
       "An employee performance management application supporting civil servant administration.",
@@ -415,7 +415,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "bkpsdm-e-presensi",
     type: "Professional",
-    companyName: "BKPSDM Mojokerto",
+    companyName: "E-Presensi",
     category: ["Digital Transformation"],
     shortDescription:
       "A digital attendance application supporting civil servant attendance administration.",
