@@ -33,6 +33,22 @@ import {
   User,
   X,
   Zap,
+
+  // Business Analysis & Technical Skills
+  ClipboardList,
+  Workflow,
+  Search,
+  FileSearch,
+  BrainCircuit,
+  Bot,
+  Database,
+  Code,
+  GitBranch,
+  Blocks,
+  Target,
+  ChartNoAxesCombined,
+  MessagesSquare,
+  ListChecks,
 } from "lucide-react";
 import { AiFillStar } from "react-icons/ai";
 import { BiLaugh, BiSolidUser } from "react-icons/bi";
@@ -128,6 +144,32 @@ export const Icons = {
   gmail: SiGmail,
   twitter: SiX,
   linkedin: SiLinkedin,
+
+  // Business Analysis
+  requirements: ClipboardList,
+  businessProcess: Workflow,
+  analysis: Search,
+  gapAnalysis: FileSearch,
+  userStories: ListChecks,
+
+  // Software Development & SDLC
+  sdlc: GitBranch,
+  agile: Blocks,
+  systemAnalysis: Code,
+  apiIntegration: Workflow,
+
+  // AI Product Knowledge
+  generativeAI: BrainCircuit,
+  llm: Bot,
+  rag: Database,
+  promptEngineering: MessagesSquare,
+  aiProduct: Target,
+
+  // Technical & Data
+  database: Database,
+  programming: Code,
+  dataAnalysis: ChartNoAxesCombined,
+
   userFill: BiSolidUser,
   work: HiBriefcase,
   gitHub: ({ ...props }: LucideProps) => (
