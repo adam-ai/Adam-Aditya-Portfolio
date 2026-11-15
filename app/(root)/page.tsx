@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 
-import BlogCard from "@/components/blogs/blog-card";
+// import BlogCard from "@/components/blogs/blog-card";
 import { AnimatedSection } from "@/components/common/animated-section";
 import { AnimatedText } from "@/components/common/animated-text";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
@@ -19,7 +19,7 @@ import { pagesConfig } from "@/config/pages";
 import { featuredProjects } from "@/config/projects";
 import { siteConfig } from "@/config/site";
 import { featuredSkills } from "@/config/skills";
-import { getFeaturedBlogs } from "@/lib/blogs";
+// import { getFeaturedBlogs } from "@/lib/blogs";
 import { cn } from "@/lib/utils";
 import profileImg from "@/public/profile-img2.jpg";
 
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 };
 
 export default function IndexPage() {
-  const featuredBlogs = getFeaturedBlogs();
+  // const featuredBlogs = getFeaturedBlogs();
   // Structured data for personal portfolio
   const personSchema = {
     "@context": "https://schema.org",
@@ -252,7 +252,7 @@ export default function IndexPage() {
           </Link>
         </AnimatedText>
       </AnimatedSection>
-      <AnimatedSection
+      {/* <AnimatedSection
         direction="up"
         className="container space-y-6 py-10 my-14"
         id="blogs"
@@ -292,11 +292,13 @@ export default function IndexPage() {
           </Link>
         </AnimatedText>
       </AnimatedSection>
+      */}
+      
       <AnimatedSection
         direction="up"
         className="container space-y-6 bg-muted py-10 my-14"
         id="skills"
-      >
+      > 
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
           <AnimatedText
             as="h2"
