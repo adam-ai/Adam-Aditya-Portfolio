@@ -12,7 +12,7 @@ export const routesConfig: any = {
       title: "Skills",
       href: "/skills",
     },
-    {
+    /* {
       title: "Contributions",
       href: "/contributions",
     },
@@ -20,7 +20,7 @@ export const routesConfig: any = {
       title: "Blogs",
       href: "/blogs",
     },
-    /* {
+    {
       title: "Community",
       href: "/community",
     }, */
