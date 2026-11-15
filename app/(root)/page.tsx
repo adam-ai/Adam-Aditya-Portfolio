@@ -24,9 +24,9 @@ import { cn } from "@/lib/utils";
 import profileImg from "@/public/profile-img2.jpg";
 
 export const metadata: Metadata = {
-  title: `${pagesConfig.home.metadata.title}`,
+  title: "Adam Ar Rosyid Aditya | Technical Business Analyst",
   description:
-    "Adam Ar Rosyid Aditya - Technical Business Analyst bridging the gap between enterprise software architecture, data-driven strategy, and AI product innovation. Explore my portfolio of system workflows, product requirements, and AI implementation initiatives.",
+    "Adam Ar Rosyid Aditya - Business Analyst bridging the gap between enterprise software architecture, data-driven strategy, and AI product innovation. Explore my portfolio of system workflows, product requirements, and AI implementation initiatives.",
   alternates: {
     canonical: siteConfig.url,
   },
@@ -41,7 +41,7 @@ export default function IndexPage() {
     name: siteConfig.authorName,
     url: siteConfig.url,
     image: siteConfig.ogImage,
-    jobTitle: "Business Analyst",
+    jobTitle: "Business Analyst | AI Product & Digital Transformation",
     sameAs: [siteConfig.links.github, siteConfig.links.instagram],
   };
 
@@ -49,8 +49,8 @@ export default function IndexPage() {
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "Next.js Portfolio Template",
-    applicationCategory: "DeveloperApplication",
+    name: "Adam Ar Rosyid Aditya - Business Analyst Portfolio",
+    applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     offers: {
       "@type": "Offer",
@@ -85,7 +85,7 @@ export default function IndexPage() {
             width={100}
             sizes="100vw"
             className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt="Adam Ar Rosyid Aditya - Business Analyst Portfolio"
+            alt="Adam Ar Rosyid Aditya - Business Analyst"
             priority
           />
           <AnimatedText
@@ -100,12 +100,13 @@ export default function IndexPage() {
             delay={0.4}
             className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
           >
-            Business Analyst
+            Business Analyst | AI Product & Digital Transformation
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-              Software engineer working at the intersection of AI, data, and
-              scalable software systems.
+              Bridging business needs, technology, and artificial intelligence
+              to build meaningful digital solutions. Focused on business
+              analysis, system solutions, and AI-driven product innovation.
             </p>
           </div>
 
