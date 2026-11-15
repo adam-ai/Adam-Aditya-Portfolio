@@ -71,7 +71,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "nafien-transport-management",
     type: "Professional",
-    companyName: "NAFIEN",
+    companyName: "PT Neo Fusion Indonesia",
     category: ["Business Analysis"],
     shortDescription:
       "A Transport Management System designed to support transportation and logistics operations.",
