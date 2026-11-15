@@ -11,14 +11,13 @@ import { Projects } from "@/config/projects";
 import { siteConfig } from "@/config/site";
 import { cn, formatDateFromObj } from "@/lib/utils";
 import profileImg from "@/public/profile-img2.jpg";
+import ProjectModules from "@/components/projects/project-modules";
 
 interface ProjectPageProps {
   params: Promise<{
     projectId: string;
   }>;
 }
-
-const githubUsername = "namanbarkiya";
 
 export default async function Project({ params }: ProjectPageProps) {
   const { projectId } = await params;
@@ -41,7 +40,7 @@ export default async function Project({ params }: ProjectPageProps) {
       </Link>
       <div>
         <time
-          dateTime={Date.now().toString()}
+          dateTime={project.startDate.toISOString()}
           className="block text-sm text-muted-foreground"
         >
           {formatDateFromObj(project.startDate)}
@@ -73,14 +72,14 @@ export default async function Project({ params }: ProjectPageProps) {
           >
             <Image
               src={profileImg}
-              alt={"naman"}
+              alt={"Adam"}
               width={42}
               height={42}
               className="rounded-full bg-background"
             />
 
             <div className="flex-1 text-left leading-tight">
-              <p className="font-medium">{"Naman Barkiya"}</p>
+              <p className="font-medium">{"Adam Ar Rosyid Aditya"}</p>
               <p className="text-[12px] text-muted-foreground">
                 @{siteConfig.username}
               </p>
@@ -89,15 +88,17 @@ export default async function Project({ params }: ProjectPageProps) {
         </div>
       </div>
 
-      <Image
-        src={project.companyLogoImg}
-        alt={project.companyName}
-        width={720}
-        height={405}
-        className="my-8 rounded-md border bg-muted transition-colors"
-        priority
-      />
-
+      {project.companyLogoImg && (
+        <Image
+          src={project.companyLogoImg}
+          alt={project.companyName}
+          width={720}
+          height={405}
+          className="my-8 rounded-md border bg-muted transition-colors"
+          priority
+        />
+      )}
+      
       <div className="mb-7 ">
         <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
           Tech Stack
@@ -116,32 +117,41 @@ export default async function Project({ params }: ProjectPageProps) {
         />
       </div>
 
-      <div className="mb-7 ">
-        <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
-          Page Info
-        </h2>
-        {project.pagesInfoArr.map((page, ind) => (
-          <div key={ind}>
-            <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">
-              <Icons.star className="h-5 w-5 mr-2" /> {page.title}
-            </h3>
-            <div>
-              <p>{page.description}</p>
-              {page.imgArr.map((img, ind) => (
-                <Image
-                  src={img}
-                  key={ind}
-                  alt={img}
-                  width={720}
-                  height={405}
-                  className="my-4 rounded-md border bg-muted transition-colors"
-                  priority
-                />
-              ))}
-            </div>
-          </div>
-        ))}
+      {project.modules && project.modules.length > 0 && (
+        <ProjectModules modules={project.modules} />
+      )}
+
+{project.pagesInfoArr.length > 0 && (
+  <div className="mb-7">
+    <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
+      Page Info
+    </h2>
+
+    {project.pagesInfoArr.map((page, ind) => (
+      <div key={ind}>
+        <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">
+          <Icons.star className="h-5 w-5 mr-2" />
+          {page.title}
+        </h3>
+
+        <div>
+          <p>{page.description}</p>
+
+          {page.imgArr.map((img, imgInd) => (
+            <Image
+              src={img}
+              key={imgInd}
+              alt={page.title}
+              width={720}
+              height={405}
+              className="my-4 rounded-md border bg-muted transition-colors"
+            />
+          ))}
+        </div>
       </div>
+    ))}
+  </div>
+)}
 
       <hr className="mt-12" />
       <div className="flex justify-center py-6 lg:py-10">
