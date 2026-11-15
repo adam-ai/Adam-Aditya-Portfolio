@@ -1,3 +1,4 @@
+
 import { Icons } from "@/components/common/icons";
 
 export interface skillsInterface {
@@ -8,153 +9,131 @@ export interface skillsInterface {
 }
 
 export const skillsUnsorted: skillsInterface[] = [
+  // Business Analysis
   {
-    name: "Next.js",
+    name: "Requirements Analysis",
     description:
-      "Effortlessly build dynamic apps with routing, layouts, loading UI, and API routes.",
+      "Analyze business needs, identify requirements, and translate them into clear functional and technical specifications.",
     rating: 5,
-    icon: Icons.nextjs,
+    icon: Icons.graphql,
   },
   {
-    name: "React",
+    name: "Business Process Modeling",
     description:
-      "Craft interactive user interfaces using components, state, props, and virtual DOM.",
+      "Analyze and document business workflows to identify process gaps, inefficiencies, and improvement opportunities.",
+    rating: 4,
+    icon: Icons.angular,
+  },
+  {
+    name: "User Stories & Use Cases",
+    description:
+      "Define user needs, business scenarios, and acceptance criteria to guide software development.",
     rating: 5,
     icon: Icons.react,
   },
   {
-    name: "GraphQL",
+    name: "Gap Analysis",
     description:
-      "Fetch data precisely with a powerful query language for APIs and runtime execution.",
-    rating: 4,
-    icon: Icons.graphql,
-  },
-  {
-    name: "Nest.js",
-    description:
-      "Create scalable and modular applications with a progressive Node.js framework.",
+      "Evaluate existing business processes and systems against desired outcomes to identify improvement areas.",
     rating: 4,
     icon: Icons.nestjs,
   },
   {
-    name: "express.js",
+    name: "Functional Specification",
     description:
-      "Build web applications and APIs quickly using a fast, unopinionated Node.js framework.",
-    rating: 5,
-    icon: Icons.express,
+      "Translate business requirements into structured functional specifications for development teams.",
+    rating: 4,
+    icon: Icons.typescript,
   },
+
+  // Software Development & SDLC
   {
-    name: "Node.js",
+    name: "Software Development Life Cycle",
     description:
-      "Run JavaScript on the server side, enabling dynamic and responsive applications.",
+      "Understand software development phases, from requirement gathering and design to development, testing, and deployment.",
     rating: 5,
     icon: Icons.nodejs,
   },
   {
-    name: "MongoDB",
+    name: "Agile & Scrum",
     description:
-      "Store and retrieve data seamlessly with a flexible and scalable NoSQL database.",
-    rating: 5,
-    icon: Icons.mongodb,
-  },
-  {
-    name: "Typescript",
-    description:
-      "Enhance JavaScript with static types, making code more understandable and reliable.",
-    rating: 5,
-    icon: Icons.typescript,
-  },
-  {
-    name: "Javascript",
-    description:
-      "Create interactive and dynamic web experiences with the versatile scripting language.",
-    rating: 5,
-    icon: Icons.javascript,
-  },
-  {
-    name: "HTML 5",
-    description:
-      "Structure web content beautifully with the latest version of HyperText Markup Language.",
-    rating: 4,
-    icon: Icons.html5,
-  },
-  {
-    name: "CSS 3",
-    description:
-      "Style web pages creatively with the latest iteration of Cascading Style Sheets.",
-    rating: 4,
-    icon: Icons.css3,
-  },
-  {
-    name: "React Native",
-    description:
-      "Develop cross-platform mobile apps using React for consistent and engaging experiences.",
+      "Understand Agile methodologies, Scrum frameworks, sprint planning, backlog management, and iterative delivery.",
     rating: 4,
     icon: Icons.react,
   },
   {
-    name: "Angular",
+    name: "System Analysis",
     description:
-      "Build dynamic web apps with a TypeScript-based open-source framework by Google.",
-    rating: 3,
-    icon: Icons.angular,
-  },
-  {
-    name: "Redux",
-    description:
-      "Manage app state effectively using a predictable and centralized state container.",
+      "Analyze system requirements, application architecture, integrations, and technical dependencies.",
     rating: 4,
-    icon: Icons.redux,
+    icon: Icons.express,
   },
   {
-    name: "Socket.io",
+    name: "API & System Integration",
     description:
-      "Enable real-time, bidirectional communication between clients and servers effortlessly.",
-    rating: 3,
-    icon: Icons.socketio,
-  },
-  {
-    name: "Material UI",
-    description:
-      "Create stunning and responsive UIs with a popular React UI framework.",
+      "Understand REST APIs, data exchange, and system integration concepts to bridge business and technical requirements.",
     rating: 4,
-    icon: Icons.mui,
+    icon: Icons.graphql,
   },
 
+  // AI Product Knowledge
   {
-    name: "Tailwind CSS",
+    name: "Generative AI",
     description:
-      "Design beautiful, modern websites faster with a utility-first CSS framework.",
+      "Understand generative AI capabilities and their applications in solving business problems and improving productivity.",
     rating: 5,
-    icon: Icons.tailwindcss,
+    icon: Icons.javascript,
   },
   {
-    name: "AWS",
+    name: "Large Language Models (LLM)",
     description:
-      "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
+      "Understand LLM capabilities, limitations, use cases, and their integration into AI-powered products.",
+    rating: 4,
+    icon: Icons.typescript,
+  },
+  {
+    name: "Retrieval-Augmented Generation (RAG)",
+    description:
+      "Understand RAG architecture and how external knowledge sources improve the accuracy and relevance of AI responses.",
+    rating: 4,
+    icon: Icons.mongodb,
+  },
+  {
+    name: "Prompt Engineering",
+    description:
+      "Design and optimize prompts to improve AI output quality, consistency, and task-specific performance.",
+    rating: 5,
+    icon: Icons.nextjs,
+  },
+  {
+    name: "AI Product Knowledge",
+    description:
+      "Evaluate AI product capabilities, business use cases, user needs, and opportunities for AI-driven solutions.",
+    rating: 4,
+    icon: Icons.nodejs,
+  },
+  
+  // Technical & Data Fundamentals
+  {
+    name: "SQL & Database Fundamentals",
+    description:
+      "Understand relational database concepts and SQL queries for data retrieval, analysis, and validation.",
     rating: 3,
-    icon: Icons.amazonaws,
-  },
-  {
-    name: "Bootstrap",
-    description:
-      "Quickly create responsive and appealing web designs using a popular CSS framework.",
-    rating: 2,
-    icon: Icons.bootstrap,
-  },
-  {
-    name: "MySQL",
-    description:
-      "Manage and organize relational databases efficiently for data-driven applications.",
-    rating: 2,
     icon: Icons.mysql,
   },
   {
-    name: "Netlify",
+    name: "JavaScript & TypeScript",
     description:
-      "Manage and organize relational databases efficiently for data-driven applications.",
+      "Understand programming fundamentals and application logic to communicate effectively with software development teams.",
     rating: 4,
-    icon: Icons.netlify,
+    icon: Icons.typescript,
+  },
+  {
+    name: "Frontend & Backend Fundamentals",
+    description:
+      "Understand frontend, backend, database, and application architecture concepts within modern software systems.",
+    rating: 4,
+    icon: Icons.react,
   },
 ];
 
