@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Script from "next/script";
+import { notFound } from "next/navigation";
 
 import BlogCard from "@/components/blogs/blog-card";
 import { AnimatedSection } from "@/components/common/animated-section";
@@ -38,7 +39,15 @@ export const metadata: Metadata = {
   },
 };
 
+// Temporarily disable the Blogs page.
+// Set to true when the blog feature is ready to be published.
+const BLOGS_ENABLED = false;
+
 export default function BlogsPage() {
+  if (!BLOGS_ENABLED) {
+    notFound();
+  }
+  
   const blogs = getAllBlogsMeta();
 
   // CollectionPage + Blog JSON-LD for the listing page
