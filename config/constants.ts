@@ -1,66 +1,44 @@
 export type ValidSkills =
-  | "Next.js"
-  | "React"
-  | "GraphQL"
-  | "Nest.js"
-  | "express.js"
-  | "Node.js"
-  | "MongoDB"
-  | "Typescript"
-  | "Javascript"
-  | "HTML 5"
-  | "CSS 3"
-  | "React Native"
-  | "Angular"
-  | "Redux"
-  | "Socket.io"
-  | "Material UI"
-  | "Tailwind CSS"
-  | "AWS"
-  | "Bootstrap"
-  | "Google Auth"
-  | "MySQL"
-  | "Java"
-  | "Databricks"
-  | "Python"
-  | "Docker"
-  | "Kubernetes"
-  | "PostgreSQL"
-  | "Redis"
-  | "Git"
-  | "CI/CD"
-  | "Jenkins"
-  | "FastAPI"
-  | "Django"
-  | "Vue.js"
-  | "Sass"
-  | "Firebase"
-  | "Azure"
-  | "Google Cloud"
+  // UI/UX & Prototyping
   | "Figma"
-  | "Webpack"
-  | "Jest"
-  | "Cypress"
-  | "Storybook"
-  | "Prisma"
-  | "Supabase"
-  | "Vercel"
-  | "Netlify"
-  | "Three.js"
-  | "WebGL"
-  | "TensorFlow"
-  | "PyTorch"
-  | "Spring Boot"
-  | "Laravel"
-  | "PHP"
-  | "Flutter"
-  | "Dart"
-  | "Flask"
-  | "Django"
-  | "FastAPI"
+  | "UXPilot"
+  | "Balsamiq"
+
+  // Business Process & Diagramming
+  | "Draw.io"
+  | "BPMN"
+
+  // Database & Query
   | "SQL"
-  | "NoSQL"
-  | "Framer Motion";
+  | "DBeaver"
+  | "Navicat"
+
+  // Project Management & Collaboration
+  | "Slack"
+  | "OpenProject"
+  | "Jira"
+  | "Microsoft Teams"
+
+  // Productivity & Workspace
+  | "Google Workspace"
+  | "Microsoft Office"
+
+  // AI Platforms & Tools
+  | "Google AI Studio"
+  | "Cherry Studio"
+  | "Generative AI"
+  | "Large Language Models (LLM)"
+  | "Prompt Engineering"
+  | "AI Product Development"
+
+  // Software Development Lifecycle
+  | "SDLC"
+  | "Agile"
+  | "Waterfall"
+  | "Requirement Analysis"
+  | "System Analysis"
+  | "User Stories"
+  | "UAT";
 
 export type ValidCategory =
   | "Full Stack"
@@ -69,7 +47,11 @@ export type ValidCategory =
   | "UI/UX"
   | "Web Dev"
   | "Mobile Dev"
-  | "3D Modeling";
+  | "3D Modeling"
+  | "Business Analysis"
+  | "Product Management"
+  | "AI Product"
+  | "Digital Transformation";
 
 export type ValidExpType = "Personal" | "Professional";
 
