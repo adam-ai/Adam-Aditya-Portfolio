@@ -83,6 +83,7 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiX,
+  SiInstagram,
 } from "react-icons/si";
 
 export const Icons = {
@@ -142,6 +143,7 @@ export const Icons = {
   tailwindcss: SiTailwindcss,
   typescript: SiTypescript,
   gmail: SiGmail,
+  instagram: SiInstagram,
   twitter: SiX,
   linkedin: SiLinkedin,
 
