@@ -17,7 +17,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <Image
           className="rounded-lg border border-border object-contain bg-white p-6"
           src={project.companyLogoImg}
-          alt={`${project.title} logo`}
+          alt="Project logo"
           fill
         />
       </div>
