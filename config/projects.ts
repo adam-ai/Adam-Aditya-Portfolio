@@ -63,7 +63,7 @@ export const Projects: ProjectInterface[] = [
   ],
   startDate: new Date("2025-09-01"),
   endDate: new Date(),
-  companyLogoImg: "",
+  companyLogoImg: "/Cerebro-Logo.png",
   descriptionDetails: {
     paragraphs: [
       "Cerebro Suite is an internal B2B product initiative at PT Neo Fusion Indonesia, bringing AI capabilities into different stages of the Software Development Lifecycle (SDLC).",
@@ -237,7 +237,7 @@ export const Projects: ProjectInterface[] = [
     ],
     startDate: new Date("2023-12-01"),
     endDate: new Date(),
-    companyLogoImg: "",
+    companyLogoImg: "/FIF-Logo.jpg",
     descriptionDetails: {
       paragraphs: [
         "A series of internal business applications supporting FIFGROUP's marketing operations, including Dealer, Kiosk, and other related applications.",
@@ -271,7 +271,7 @@ export const Projects: ProjectInterface[] = [
     ],
     startDate: new Date("2023-12-01"),
     endDate: new Date(),
-    companyLogoImg: "",
+    companyLogoImg: "/FIF-Logo.jpg",
     descriptionDetails: {
       paragraphs: [
         "An employee attendance application supporting attendance management for FIFGROUP employees across Indonesia.",
@@ -305,7 +305,7 @@ export const Projects: ProjectInterface[] = [
     ],
     startDate: new Date("2025-01-01"),
     endDate: new Date("2025-12-31"),
-    companyLogoImg: "",
+    companyLogoImg: "/Nafien-Logo.png",
     descriptionDetails: {
       paragraphs: [
         "A Transport Management System project for NAFIEN, delivered during my role as Business Analyst at PT Neo Fusion Indonesia.",
@@ -338,7 +338,7 @@ export const Projects: ProjectInterface[] = [
     ],
     startDate: new Date("2024-01-01"),
     endDate: new Date("2024-12-31"),
-    companyLogoImg: "",
+    companyLogoImg: "/ADM-Logo.jpg",
     descriptionDetails: {
       paragraphs: [
         "An E-Bidding application project for Astra Daihatsu Motor, delivered during my role as Business Analyst at PT Neo Fusion Indonesia.",
@@ -370,7 +370,7 @@ export const Projects: ProjectInterface[] = [
     ],
     startDate: new Date("2022-11-01"),
     endDate: new Date("2023-11-30"),
-    companyLogoImg: "",
+    companyLogoImg: "/Korlantas-Logo.jpg",
     descriptionDetails: {
       paragraphs: [
         "A bodycam hardware and software application project for Korlantas POLRI, delivered during my time at PT Gamma Maya Cyberindo.",
@@ -396,7 +396,7 @@ export const Projects: ProjectInterface[] = [
     techStack: ["Microsoft Office"],
     startDate: new Date("2021-01-01"),
     endDate: new Date("2022-04-30"),
-    companyLogoImg: "",
+    companyLogoImg: "/EKinerja-Mojokerto-Logo.png",
     descriptionDetails: {
       paragraphs: [
         "E-Kinerja is a digital employee performance management application used at BKPSDM Mojokerto.",
@@ -422,7 +422,7 @@ export const Projects: ProjectInterface[] = [
     techStack: ["Microsoft Office"],
     startDate: new Date("2021-01-01"),
     endDate: new Date("2022-04-30"),
-    companyLogoImg: "",
+    companyLogoImg: "/EPresensi-Mojokerto-Logo.png",
     descriptionDetails: {
       paragraphs: [
         "E-Presensi is a digital attendance application supporting employee attendance administration at BKPSDM Mojokerto.",
