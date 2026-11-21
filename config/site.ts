@@ -7,6 +7,8 @@ export const siteConfig = {
   url: "https://adam-aditya-portfolio-4x6m.vercel.app",
   links: {
     instagram: "https://www.instagram.com/arrosyid_adam/",
+    linkedin: "https://www.linkedin.com/in/adamarrosyid/",
+    email: "mailto:arrosyidadam@gmail.com",
     github: "https://github.com/adam-ai",
     templateRepo: "https://github.com/adam-ai/Adam-Aditya-Portfolio",
   },
