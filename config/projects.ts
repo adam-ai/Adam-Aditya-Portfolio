@@ -218,73 +218,7 @@ export const Projects: ProjectInterface[] = [
   ],
 },
 
-  // 2. Transport Management System - NAFIEN
-  {
-    id: "nafien-transport-management",
-    type: "Professional",
-    companyName: "NAFIEN - TMS",
-    category: ["Business Analysis"],
-    shortDescription:
-      "A Transport Management System designed to support transportation and logistics operations.",
-    techStack: [
-      "Requirement Analysis",
-      "System Analysis",
-      "User Stories",
-      "BPMN",
-      "Draw.io",
-      "SDLC",
-    ],
-    startDate: new Date("2025-01-01"),
-    endDate: new Date("2025-12-31"),
-    companyLogoImg: "",
-    descriptionDetails: {
-      paragraphs: [
-        "A Transport Management System project for NAFIEN, delivered during my role as Business Analyst at PT Neo Fusion Indonesia.",
-      ],
-      bullets: [
-        "Analyze business requirements and operational workflows.",
-        "Translate stakeholder needs into functional requirements.",
-        "Prepare business process and system documentation.",
-        "Coordinate with developers to align implementation with business requirements.",
-      ],
-    },
-    pagesInfoArr: [],
-  },
-
-  // 3. E-Bidding Application - ADM
-  {
-    id: "adm-e-bidding",
-    type: "Professional",
-    companyName: "E-Bidding",
-    category: ["Business Analysis"],
-    shortDescription:
-      "An E-Bidding application developed to support business bidding processes at Astra Daihatsu Motor.",
-    techStack: [
-      "Requirement Analysis",
-      "System Analysis",
-      "User Stories",
-      "BPMN",
-      "Draw.io",
-      "SDLC",
-    ],
-    startDate: new Date("2024-01-01"),
-    endDate: new Date("2024-12-31"),
-    companyLogoImg: "",
-    descriptionDetails: {
-      paragraphs: [
-        "An E-Bidding application project for Astra Daihatsu Motor, delivered during my role as Business Analyst at PT Neo Fusion Indonesia.",
-      ],
-      bullets: [
-        "Analyze business requirements and stakeholder needs.",
-        "Translate requirements into functional specifications.",
-        "Document business processes and system workflows.",
-        "Coordinate with developers to clarify requirements and support implementation.",
-      ],
-    },
-    pagesInfoArr: [],
-  },
-
-  // 4. FIFGROUP Marketing Business Applications
+// 2. FIFGROUP Marketing Business Applications
   {
     id: "fifgroup-marketing-applications",
     type: "Professional",
@@ -319,7 +253,7 @@ export const Projects: ProjectInterface[] = [
     pagesInfoArr: [],
   },
 
-  // 5. FIFGROUP National Employee Attendance
+  // 3. FIFGROUP National Employee Attendance
   {
     id: "fifgroup-national-attendance",
     type: "Professional",
@@ -348,6 +282,72 @@ export const Projects: ProjectInterface[] = [
         "Prepare system documentation and process flows.",
         "Coordinate with stakeholders and developers during development.",
         "Support requirement clarification and alignment between business and technical teams.",
+      ],
+    },
+    pagesInfoArr: [],
+  },
+  
+  // 4. Transport Management System - NAFIEN
+  {
+    id: "nafien-transport-management",
+    type: "Professional",
+    companyName: "NAFIEN - TMS",
+    category: ["Business Analysis"],
+    shortDescription:
+      "A Transport Management System designed to support transportation and logistics operations.",
+    techStack: [
+      "Requirement Analysis",
+      "System Analysis",
+      "User Stories",
+      "BPMN",
+      "Draw.io",
+      "SDLC",
+    ],
+    startDate: new Date("2025-01-01"),
+    endDate: new Date("2025-12-31"),
+    companyLogoImg: "",
+    descriptionDetails: {
+      paragraphs: [
+        "A Transport Management System project for NAFIEN, delivered during my role as Business Analyst at PT Neo Fusion Indonesia.",
+      ],
+      bullets: [
+        "Analyze business requirements and operational workflows.",
+        "Translate stakeholder needs into functional requirements.",
+        "Prepare business process and system documentation.",
+        "Coordinate with developers to align implementation with business requirements.",
+      ],
+    },
+    pagesInfoArr: [],
+  },
+
+  // 5. E-Bidding Application - ADM
+  {
+    id: "adm-e-bidding",
+    type: "Professional",
+    companyName: "E-Bidding",
+    category: ["Business Analysis"],
+    shortDescription:
+      "An E-Bidding application developed to support business bidding processes at Astra Daihatsu Motor.",
+    techStack: [
+      "Requirement Analysis",
+      "System Analysis",
+      "User Stories",
+      "BPMN",
+      "Draw.io",
+      "SDLC",
+    ],
+    startDate: new Date("2024-01-01"),
+    endDate: new Date("2024-12-31"),
+    companyLogoImg: "",
+    descriptionDetails: {
+      paragraphs: [
+        "An E-Bidding application project for Astra Daihatsu Motor, delivered during my role as Business Analyst at PT Neo Fusion Indonesia.",
+      ],
+      bullets: [
+        "Analyze business requirements and stakeholder needs.",
+        "Translate requirements into functional specifications.",
+        "Document business processes and system workflows.",
+        "Coordinate with developers to clarify requirements and support implementation.",
       ],
     },
     pagesInfoArr: [],
